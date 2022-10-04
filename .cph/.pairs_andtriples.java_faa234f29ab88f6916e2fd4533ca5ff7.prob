@@ -1,0 +1,1 @@
+{"name":"Local: pairs_andtriples","url":"/home/kshitij/Desktop/Lockouts/pairs_andtriples.java","tests":[{"id":1664737494369,"input":"21112","output":"True"},{"id":1664737501216,"input":"55","output":"True"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/kshitij/Desktop/Lockouts/pairs_andtriples.java","group":"local","local":true}
