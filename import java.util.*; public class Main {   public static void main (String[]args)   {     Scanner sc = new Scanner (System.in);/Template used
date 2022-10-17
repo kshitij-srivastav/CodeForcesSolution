@@ -1,0 +1,60 @@
+import java.util.*;
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner (System.in);
+    //int test = sc.nextInt ();
+    int test = 1;
+
+    for (int t = 1; t <= test; t++)
+      {
+
+        
+
+      }
+
+  }
+  static int[] readArray (int a[])
+  {
+    Scanner in = new Scanner (System.in);
+    for (int i = 0; i < a.length; i++)
+      {
+a[i] = in.nextInt ();
+      }
+    return a;
+  }
+  static void printArray (int a[])
+  {
+  for (int x:a)
+      {
+System.out.print (x + " ");
+      }
+  }
+  static int[] listToArray (ArrayList < Integer > a1)
+  {
+    int[] arr = a1.stream ().mapToInt (i->i).toArray ();
+
+    return arr;
+  }
+  static int gcd (int a, int b)
+  {
+
+    if (b == 0)
+      return a;
+    else
+      return gcd (b, a % b);
+  }
+  static void dfs (int node, ArrayList < ArrayList < Integer >> adj,
+int vis[])
+  {
+    vis[node] = 1;
+  for (Integer it:adj.get (node))
+      {
+if (vis[it] == 0)
+{
+ dfs (it, adj, vis);
+}
+      }
+  }
+}
